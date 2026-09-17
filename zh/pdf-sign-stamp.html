@@ -714,7 +714,8 @@
 })();
 </script>
         
-  </main>
+  <section id="sign-pdf-controls" style="margin:24px 0;padding:20px;border:1px solid #64748b;border-radius:12px"><h2>将签名写入 PDF</h2><p>先在画布签名，再选择 PDF。坐标单位为 PDF 点（72 点 = 1 英寸），X 从左侧、Y 从底部计算。此功能添加可见签名图片，不创建证书数字签名；不支持旋转页面。</p><style>#sign-pdf-controls label{display:block;margin:12px 0}#sign-pdf-controls input{display:block;padding:8px;border:1px solid #64748b;border-radius:6px;max-width:100%;background:white;color:black}#sign-pdf-controls button{padding:12px;background:#2563eb;color:white;border-radius:8px}#sign-pdf-controls button:disabled{opacity:.4}</style><label>PDF 文件<input id="sign-pdf-file" type="file" accept="application/pdf,.pdf"></label><label for="sign-page">页码<input id="sign-page" type="number" value="1" min="1" step="1"></label><label for="sign-x">X (pt)<input id="sign-x" type="number" value="36" min="0"></label><label for="sign-y">Y (pt)<input id="sign-y" type="number" value="36" min="0"></label><label for="sign-width">签名宽度 (pt)<input id="sign-width" type="number" value="180" min="1"></label><button id="sign-pdf-export" disabled>下载已签名 PDF</button><p id="sign-pdf-status" role="status" aria-live="polite"></p></section><script src="/vendor/pdf-lib.min.js"></script><script src="/tool-sign-pdf.js" defer></script>
+</main>
 
   <!-- Internal Linking Matrix -->
   <section class="border-t border-[#e7e5e4] dark:border-[#334155] py-12 px-4 sm:px-6 lg:px-8 opacity-95">
