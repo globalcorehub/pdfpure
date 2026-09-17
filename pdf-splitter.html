@@ -619,41 +619,8 @@
   </div>
 </div>
 
-<script>
-(function() {
-  const inp = document.getElementById('split-file-inp');
-  const nameEl = document.getElementById('split-file-name');
-  const btn = document.getElementById('btn-split-action');
-  let loadedFile = null;
-
-  inp.addEventListener('change', (e) => {
-    if (e.target.files && e.target.files[0]) {
-      loadedFile = e.target.files[0];
-      nameEl.textContent = 'Selected: ' + loadedFile.name;
-    }
-  });
-
-  btn.addEventListener('click', () => {
-    if (!loadedFile) {
-      if (window.showToast) window.showToast('Please select a PDF file first.');
-      return;
-    }
-    btn.textContent = 'Extracting pages...';
-    setTimeout(() => {
-      const blob = new Blob([loadedFile], { type: 'application/pdf' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'extracted_pages_' + Date.now() + '.pdf';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      btn.textContent = 'Extract Selected Pages';
-      if (window.showToast) window.showToast('Pages extracted and downloaded!');
-    }, 600);
-  });
-})();
-</script>
+<script src="/vendor/pdf-lib.min.js"></script>
+<script src="/pdf-tools.js"></script>
         
   </main>
 
