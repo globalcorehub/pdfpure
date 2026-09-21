@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="sv-SE" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>PdfPure Studio - 100% Klientbaserade Privata PDF-verktyg</title>
+  <meta name="description" content="Slå ihop PDF-filer, dela sidor, signera digitalt, skapa PDF från bilder och maskera känslig data.">
+  <meta name="keywords" content="PdfPure Studio, 100% Klientbaserade Privata PDF-verktyg, pdf merge verktyg, pdf split verktyg, pdf sign verktyg, img to pdf konverterare, pdf redact verktyg, Pdf Merge Verktyg, Pdf Split Verktyg, Pdf Sign Verktyg, Img To Pdf Konvert, Pdf Redact Verktyg">
+  <meta name="author" content="PdfPure Studio">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://pdfpure.globalcorehub.com/sv/">
+  <link rel="alternate" hreflang="en" href="https://pdfpure.globalcorehub.com/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://pdfpure.globalcorehub.com/zh/" />
+  <link rel="alternate" hreflang="zh" href="https://pdfpure.globalcorehub.com/zh/" />
+  <link rel="alternate" hreflang="es" href="https://pdfpure.globalcorehub.com/es/" />
+  <link rel="alternate" hreflang="pt" href="https://pdfpure.globalcorehub.com/pt/" />
+  <link rel="alternate" hreflang="de" href="https://pdfpure.globalcorehub.com/de/" />
+  <link rel="alternate" hreflang="fr" href="https://pdfpure.globalcorehub.com/fr/" />
+  <link rel="alternate" hreflang="ja" href="https://pdfpure.globalcorehub.com/ja/" />
+  <link rel="alternate" hreflang="ko-KR" href="https://pdfpure.globalcorehub.com/ko/" />
+  <link rel="alternate" hreflang="it-IT" href="https://pdfpure.globalcorehub.com/it/" />
+  <link rel="alternate" hreflang="ru-RU" href="https://pdfpure.globalcorehub.com/ru/" />
+  <link rel="alternate" hreflang="ar-SA" href="https://pdfpure.globalcorehub.com/ar/" />
+  <link rel="alternate" hreflang="id-ID" href="https://pdfpure.globalcorehub.com/id/" />
+  <link rel="alternate" hreflang="vi-VN" href="https://pdfpure.globalcorehub.com/vi/" />
+  <link rel="alternate" hreflang="tr-TR" href="https://pdfpure.globalcorehub.com/tr/" />
+  <link rel="alternate" hreflang="th-TH" href="https://pdfpure.globalcorehub.com/th/" />
+  <link rel="alternate" hreflang="hi-IN" href="https://pdfpure.globalcorehub.com/hi/" />
+  <link rel="alternate" hreflang="nl-NL" href="https://pdfpure.globalcorehub.com/nl/" />
+  <link rel="alternate" hreflang="pl-PL" href="https://pdfpure.globalcorehub.com/pl/" />
+  <link rel="alternate" hreflang="sv-SE" href="https://pdfpure.globalcorehub.com/sv/" />
+  <link rel="alternate" hreflang="x-default" href="https://pdfpure.globalcorehub.com/" />
+
+  <!-- Dynamic Inline SVG Favicon (3D Apple Glass Frosted Package Cube) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='pkg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%230284c7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23pkg)'/%3E%3Cpath d='M16 6l10 5.5v11L16 28 6 22.5v-11L16 6z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M16 6v11M16 17l10-5.5M16 17L6 11.5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <!-- OpenGraph Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PdfPure Studio">
+  <meta property="og:title" content="PdfPure Studio - 100% Klientbaserade Privata PDF-verktyg">
+  <meta property="og:description" content="Slå ihop PDF-filer, dela sidor, signera digitalt, skapa PDF från bilder och maskera känslig data.">
+  <meta property="og:url" content="https://pdfpure.globalcorehub.com/sv/">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:image" content="https://pdfpure.globalcorehub.com/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PdfPure Studio">
+
+  <!-- Twitter Social Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PdfPure Studio - 100% Klientbaserade Privata PDF-verktyg">
+  <meta name="twitter:description" content="Slå ihop PDF-filer, dela sidor, signera digitalt, skapa PDF från bilder och maskera känslig data.">
+  <meta name="twitter:image" content="https://pdfpure.globalcorehub.com/og-image.svg">
+
+  <!-- Apple SF Pro / Plus Jakarta Sans Typography Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Framework -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          colors: {
+            bento: {
+              sky: '#0284c7',
+              cyan: '#06b6d4',
+              slate: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Petite-Vue Reactive Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/petite-vue@0.4.1/dist/petite-vue.iife.js" defer></script>
+
+  <!-- Apple Bento Glassmorphism Custom CSS -->
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      letter-spacing: -0.015em;
+    }
+    .bento-glass {
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .dark .bento-glass {
+      background: rgba(15, 23, 42, 0.78);
+      border: 1px solid rgba(51, 65, 85, 0.85);
+    }
+    .floating-nav {
+      position: sticky;
+      top: 14px;
+      z-index: 50;
+      margin: 0 auto;
+      max-width: 82rem;
+      padding: 0 1rem;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #93c5fd; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+    #tool-search, #search-section, [data-search-target] {
+      scroll-margin-top: 130px;
+    }
+    @keyframes search-glow-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .search-highlight-pulse {
+      animation: search-glow-pulse 0.4s ease-in-out 2;
+      box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.45) !important;
+      border-color: rgb(14, 165, 233) !important;
+    }
+  </style>
+
+  <!-- Structured Data JSON-LD (WebSite & SearchAction) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PdfPure Studio",
+    "url": "https://pdfpure.globalcorehub.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pdfpure.globalcorehub.com/?q={search_term_string}#tool-search",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Structured Data JSON-LD (WebApplication) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PdfPure Studio",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "url": "https://pdfpure.globalcorehub.com/sv/",
+    "description": "Slå ihop PDF-filer, dela sidor, signera digitalt, skapa PDF från bilder och maskera känslig data.",
+    "potentialAction": {
+      "@type": "UseAction",
+      "target": "https://pdfpure.globalcorehub.com/sv/",
+      "name": "Execute PdfPure Studio"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Hem",
+        "item": "https://pdfpure.globalcorehub.com/sv/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Floating Island Navigation Bar -->
+  <header class="floating-nav">
+    <div class="bento-glass rounded-full px-4 sm:px-6 py-3 shadow-[0_10px_35px_rgba(0,0,0,0.06)] flex items-center justify-between transition-all">
+      
+      <!-- Brand Identity -->
+      <a href="/sv/" class="flex items-center space-x-3 group">
+        <div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-sky-500 to-blue-600 text-white flex items-center justify-center shadow-lg shadow-sky-500/25 group-hover:scale-105 transition-transform">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-extrabold text-base tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition">PdfPure Studio</span>
+          <span class="hidden sm:inline-block ml-2 text-[10px] font-mono px-2 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 font-bold">100% CLIENT-SIDE AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-1 text-xs font-semibold text-slate-700 dark:text-slate-200">
+        <a href="/sv/" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition text-sky-600 font-bold bg-sky-50 dark:bg-sky-950/50">
+          Hem
+        </a>
+
+        
+        <a href="/sv/pdf-merger" title="Pdf Merge Verktyg" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition truncate max-w-[150px]">
+          Pdf Merge Verktyg
+        </a>
+        
+        <a href="/sv/pdf-splitter" title="Pdf Split Verktyg" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition truncate max-w-[150px]">
+          Pdf Split Verktyg
+        </a>
+        
+
+        <!-- All Tools Dropdown (Zero-Gap Hover + Click Controller) -->
+        <div class="relative" id="tools-dropdown-container">
+          <button id="tools-dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center space-x-1 cursor-pointer select-none">
+            <span>Alla Verktyg</span>
+            <svg id="tools-dropdown-arrow" class="w-3.5 h-3.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <!-- Bridge wrapper: top-full pt-2 guarantees mouse never leaves hit-box when moving to panel -->
+          <div id="tools-dropdown-panel" class="hidden absolute right-0 top-full pt-2 w-72 z-50 transition-all duration-150">
+            <div class="rounded-3xl bento-glass shadow-2xl p-2.5 border border-slate-200/80 dark:border-slate-700/80">
+              <div class="text-[10px] font-mono text-slate-400 px-3 py-1.5 uppercase tracking-wider font-bold border-b border-slate-100 dark:border-slate-800 mb-1">
+                Alla Verktyg (5)
+              </div>
+              <div class="max-h-80 overflow-y-auto space-y-1">
+                
+                <a href="/sv/pdf-merger" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Merge Verktyg</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Merge: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</div>
+                </a>
+                
+                <a href="/sv/pdf-splitter" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Split Verktyg</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Split: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</div>
+                </a>
+                
+                <a href="/sv/pdf-sign-stamp" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Sign Verktyg</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Sign: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</div>
+                </a>
+                
+                <a href="/sv/image-to-pdf" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Img To Pdf Konvert</div>
+                  <div class="text-[11px] text-slate-500 truncate">Img To Pdf: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</div>
+                </a>
+                
+                <a href="/sv/pdf-redactor" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Redact Verktyg</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Redact: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Side Actions -->
+      <div class="flex items-center space-x-2">
+        
+        <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-500/10 via-amber-400/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 transition-all font-semibold text-xs shadow-sm hover:scale-105 active:scale-95" title="Pro Resurser">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+          <span>⚡ Pro Resurser ↗</span>
+        </a>
+        
+
+        <a href="/sv/?focus_search=1#tool-search" id="nav-search-btn" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition cursor-pointer" title="Search Tools (Ctrl+K)">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </a>
+
+        <!-- Language Selector Details -->
+        <details class="relative">
+          <summary class="list-none cursor-pointer px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-mono font-bold flex items-center space-x-1 transition">
+            <span>[SV]</span>
+            <span class="hidden sm:inline">Swedish</span>
+          </summary>
+          <div class="absolute right-0 mt-2 w-44 rounded-2xl bento-glass shadow-2xl p-1.5 z-50 text-xs space-y-0.5">
+            
+            <a href="/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[EN] English</span>
+              
+            </a>
+            
+            <a href="/zh/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[ZH] 简体中文</span>
+              
+            </a>
+            
+            <a href="/es/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[ES] Español</span>
+              
+            </a>
+            
+            <a href="/pt/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[PT] Português</span>
+              
+            </a>
+            
+            <a href="/de/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[DE] Deutsch</span>
+              
+            </a>
+            
+            <a href="/fr/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[FR] Français</span>
+              
+            </a>
+            
+            <a href="/ja/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[JA] 日本語</span>
+              
+            </a>
+            
+            <a href="/ko/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[KO] 한국어</span>
+              
+            </a>
+            
+            <a href="/it/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[IT] Italiano</span>
+              
+            </a>
+            
+            <a href="/ru/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[RU] Русский</span>
+              
+            </a>
+            
+            <a href="/ar/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[AR] العربية</span>
+              
+            </a>
+            
+            <a href="/id/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[ID] Bahasa Indonesia</span>
+              
+            </a>
+            
+            <a href="/vi/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[VI] Tiếng Việt</span>
+              
+            </a>
+            
+            <a href="/tr/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[TR] Türkçe</span>
+              
+            </a>
+            
+            <a href="/th/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[TH] ภาษาไทย</span>
+              
+            </a>
+            
+            <a href="/hi/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[HI] हिन्दी</span>
+              
+            </a>
+            
+            <a href="/nl/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[NL] Nederlands</span>
+              
+            </a>
+            
+            <a href="/pl/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[PL] Polski</span>
+              
+            </a>
+            
+            <a href="/sv/" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition font-bold text-sky-600 bg-sky-50 dark:bg-sky-950/50">
+              <span>[SV] Svenska</span>
+              <span>✓</span>
+            </a>
+            
+          </div>
+        </details>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 bento-glass rounded-3xl p-4 shadow-xl space-y-2">
+      
+      <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-xs font-bold text-amber-600 dark:text-amber-400 hover:bg-amber-500/20 transition">
+        <span class="flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+          <span>⚡ Pro Resurser</span>
+        </span>
+        <span class="font-mono text-xs">↗</span>
+      </a>
+      
+      <a href="/sv/?focus_search=1#tool-search" class="mobile-search-link flex items-center justify-between px-3.5 py-2 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 bg-white/70 dark:bg-slate-800/70 text-xs font-mono text-slate-600 dark:text-slate-300">
+        <span class="flex items-center space-x-2">
+          <svg class="w-3.5 h-3.5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>Sök verktyg... (Tryck /)</span>
+        </span>
+        <kbd class="text-[10px] px-1.5 py-0.5 rounded border border-slate-200 dark:border-slate-700 opacity-60 bg-white dark:bg-slate-900 font-mono">/</kbd>
+      </a>
+      <a href="/sv/" class="block px-3.5 py-2 rounded-2xl text-sm font-bold text-sky-600 bg-sky-50 dark:bg-sky-950/50">
+        Hem
+      </a>
+      
+      <a href="/sv/pdf-merger" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Merge Verktyg
+      </a>
+      
+      <a href="/sv/pdf-splitter" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Split Verktyg
+      </a>
+      
+      <a href="/sv/pdf-sign-stamp" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Sign Verktyg
+      </a>
+      
+      <a href="/sv/image-to-pdf" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Img To Pdf Konvert
+      </a>
+      
+      <a href="/sv/pdf-redactor" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Redact Verktyg
+      </a>
+      
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main class="flex-grow w-full py-6 sm:py-8">
+    
+
+    
+    <div class="max-w-7xl mx-auto px-2 sm:px-4">
+      <!-- Live Cross-Border E-Commerce & Freight Benchmarks Ribbon -->
+      <div class="mb-6 sm:mb-8 p-3.5 rounded-3xl bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 shadow-sm flex flex-wrap items-center justify-between gap-2.5 text-[11px] sm:text-xs font-mono text-slate-600 dark:text-slate-300">
+        <div class="flex items-center space-x-2">
+          <span class="inline-block w-2.5 h-2.5 rounded-full bg-sky-500 animate-pulse"></span>
+          <span class="font-bold text-slate-800 dark:text-slate-200">Live Cross-Border E-Commerce & Freight Benchmarks:</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="px-2.5 py-1 rounded-full bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-semibold">USD/EUR: 0.92</span>
+          <span class="px-2.5 py-1 rounded-full bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-semibold">USD/CNY: 7.24</span>
+          <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">Air Express: ~$6.50/kg</span>
+          <span class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800">Matson Ocean: ~$1.40/kg</span>
+          <span class="px-2.5 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-semibold">Amazon Referral: 15% avg</span>
+        </div>
+      </div>
+
+      <!-- Hero Bento Section Header & Instant Search -->
+      <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gradient-to-r from-sky-500/10 to-blue-500/10 border border-sky-400/30 text-sky-600 dark:text-sky-400 text-xs font-semibold mb-3">
+          <span>100% Klientbaserade Privata PDF-verktyg</span>
+        </div>
+        <h1 class="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50 mb-3 sm:mb-4">
+          PdfPure Studio
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto mb-6">
+          Slå ihop PDF-filer, dela sidor, signera digitalt, skapa PDF från bilder och maskera känslig data.
+        </p>
+
+        <!-- Floating Apple Glass Search Bar -->
+        <div id="search-section" class="max-w-xl mx-auto relative flex items-center scroll-mt-28 sm:scroll-mt-36">
+          <div class="absolute left-4 opacity-50 pointer-events-none">
+            <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <input type="text" id="tool-search" placeholder="Sök verktyg... (Tryck /)" class="w-full pl-11 pr-20 py-3.5 rounded-full border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur-2xl text-xs sm:text-sm font-mono shadow-md focus:outline-none focus:ring-2 focus:ring-sky-500 transition scroll-mt-28 sm:scroll-mt-36">
+          <div class="absolute right-3.5 flex items-center space-x-1.5">
+            <kbd class="hidden sm:inline-block px-1.5 py-0.5 text-[10px] font-mono rounded-full border border-slate-300 dark:border-slate-700 opacity-60 bg-slate-100 dark:bg-slate-800">Ctrl+K</kbd>
+            <button id="btn-clear-search" class="hidden text-xs opacity-60 hover:opacity-100 font-mono px-1">&times;</button>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-[11px] font-mono text-slate-500 mt-2 max-w-xl mx-auto px-2">
+          <span id="search-stats">Visar alla 5 utvecklarverktyg</span>
+          <span class="hidden sm:inline">100% Körning i Webbläsaren</span>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="no-tools-found" class="hidden text-center py-12 px-4 rounded-3xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/60 backdrop-blur-xl mb-12">
+        <p class="text-sm font-mono text-slate-600 dark:text-slate-300 mb-3">Inga verktyg matchade sökningen.</p>
+        <button id="btn-reset-filter" class="px-5 py-2 rounded-full text-xs font-mono font-bold border border-slate-300 dark:border-slate-700 hover:bg-white transition">
+          Återställ Filter
+        </button>
+      </div>
+
+      <!-- Asymmetric Apple Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-12 sm:mb-16">
+        <div class="col-span-1 md:col-span-2 rounded-3xl p-6 sm:p-8 bg-gradient-to-br from-white/90 via-sky-50/50 to-white/90 dark:from-slate-900/90 dark:via-sky-950/20 dark:to-slate-900/90 backdrop-blur-2xl border-2 border-sky-400/30 shadow-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono uppercase px-3 py-1 rounded-full bg-sky-500 text-white font-bold tracking-wide">FEATURED BENTO SIMULATOR</span>
+              <span class="text-xs font-mono text-sky-600 dark:text-sky-400 font-bold">100% CLIENT-SIDE</span>
+            </div>
+            <h2 class="text-lg sm:text-2xl font-black text-slate-900 dark:text-slate-50 mb-2">Amazon FBA vs DTC Profit & Margin Simulator</h2>
+            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-6">Slide price and manufacturing cost to compute real-time FBA Pick & Pack, Referral, and DTC net take-home margins.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-6">
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-700 dark:text-slate-200 mb-1.5 font-mono">
+                  <span>Product Retail Price</span>
+                  <span id="bento-price-val" class="text-sky-600 dark:text-sky-400 font-extrabold">$39.99</span>
+                </div>
+                <input type="range" id="bento-price-slider" min="10" max="200" step="1" value="40" class="w-full accent-sky-500">
+              </div>
+              <div>
+                <div class="flex justify-between text-xs font-bold text-slate-700 dark:text-slate-200 mb-1.5 font-mono">
+                  <span>Landed Cost of Goods (COGS)</span>
+                  <span id="bento-cogs-val" class="text-slate-600 dark:text-slate-400 font-extrabold">$9.50</span>
+                </div>
+                <input type="range" id="bento-cogs-slider" min="2" max="80" step="0.5" value="9.5" class="w-full accent-sky-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 p-4 rounded-2xl bg-white/80 dark:bg-slate-800/80 border border-slate-200/80 dark:border-slate-700/80 mb-4">
+              <div>
+                <span class="block text-[11px] font-mono text-slate-500">Amazon FBA & Referral Fees (est.):</span>
+                <span id="bento-fees-disp" class="text-sm sm:text-base font-bold text-amber-600 dark:text-amber-400 font-mono">$10.75</span>
+              </div>
+              <div>
+                <span class="block text-[11px] font-mono text-slate-500">Net Profit per Unit:</span>
+                <span id="bento-profit-disp" class="text-lg sm:text-xl font-black text-emerald-600 dark:text-emerald-400 font-mono">$19.74</span>
+              </div>
+              <div>
+                <span class="block text-[11px] font-mono text-slate-500">Net Margin:</span>
+                <span id="bento-margin-disp" class="inline-block mt-0.5 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-700 dark:text-emerald-300 font-mono font-bold text-xs">49.4%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right">
+            <a href="/sv/pdf-merger" class="inline-flex items-center text-xs font-bold text-sky-600 dark:text-sky-400 hover:underline">
+              <span>Open Full FBA Calculator →</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/sv/pdf-merger" data-search="pdf merge verktyg pdf merge: snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar. pdf merge verktyg pdf merge online pdf merge pdf-merger" class="tool-card rounded-3xl p-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 hover:border-sky-500/50 hover:shadow-xl hover:scale-[1.01] transition-all duration-200 flex flex-col justify-between group"><div><div class="flex items-center justify-between mb-3"><span class="text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 font-bold">TOOL</span><span class="text-[10px] text-slate-400 font-mono">100% Client-Side</span></div><h3 class="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition mb-2">Pdf Merge Verktyg</h3><p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">Pdf Merge: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</p></div><div><div class="flex flex-wrap mb-3"><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf merge verktyg</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf merge</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#online pdf merge</span></div><div class="text-xs font-bold text-sky-600 dark:text-sky-400 flex items-center space-x-1 group-hover:translate-x-1 transition-transform"><span>Öppna Verktyg</span><span>&rarr;</span></div></div></a>
+<a href="/sv/pdf-splitter" data-search="pdf split verktyg pdf split: snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar. pdf split verktyg pdf split online pdf split pdf-splitter" class="tool-card rounded-3xl p-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 hover:border-sky-500/50 hover:shadow-xl hover:scale-[1.01] transition-all duration-200 flex flex-col justify-between group"><div><div class="flex items-center justify-between mb-3"><span class="text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 font-bold">TOOL</span><span class="text-[10px] text-slate-400 font-mono">100% Client-Side</span></div><h3 class="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition mb-2">Pdf Split Verktyg</h3><p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">Pdf Split: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</p></div><div><div class="flex flex-wrap mb-3"><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf split verktyg</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf split</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#online pdf split</span></div><div class="text-xs font-bold text-sky-600 dark:text-sky-400 flex items-center space-x-1 group-hover:translate-x-1 transition-transform"><span>Öppna Verktyg</span><span>&rarr;</span></div></div></a>
+<a href="/sv/pdf-sign-stamp" data-search="pdf sign verktyg pdf sign: snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar. pdf sign verktyg pdf sign online pdf sign pdf-sign-stamp" class="tool-card rounded-3xl p-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 hover:border-sky-500/50 hover:shadow-xl hover:scale-[1.01] transition-all duration-200 flex flex-col justify-between group"><div><div class="flex items-center justify-between mb-3"><span class="text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 font-bold">TOOL</span><span class="text-[10px] text-slate-400 font-mono">100% Client-Side</span></div><h3 class="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition mb-2">Pdf Sign Verktyg</h3><p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">Pdf Sign: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</p></div><div><div class="flex flex-wrap mb-3"><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf sign verktyg</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf sign</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#online pdf sign</span></div><div class="text-xs font-bold text-sky-600 dark:text-sky-400 flex items-center space-x-1 group-hover:translate-x-1 transition-transform"><span>Öppna Verktyg</span><span>&rarr;</span></div></div></a>
+<a href="/sv/image-to-pdf" data-search="img to pdf konverterare img to pdf: snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar. img to pdf konverterare img to pdf online img to pdf image-to-pdf" class="tool-card rounded-3xl p-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 hover:border-sky-500/50 hover:shadow-xl hover:scale-[1.01] transition-all duration-200 flex flex-col justify-between group"><div><div class="flex items-center justify-between mb-3"><span class="text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 font-bold">TOOL</span><span class="text-[10px] text-slate-400 font-mono">100% Client-Side</span></div><h3 class="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition mb-2">Img To Pdf Konverterare</h3><p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">Img To Pdf: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</p></div><div><div class="flex flex-wrap mb-3"><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#img to pdf konverterare</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#img to pdf</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#online img to pdf</span></div><div class="text-xs font-bold text-sky-600 dark:text-sky-400 flex items-center space-x-1 group-hover:translate-x-1 transition-transform"><span>Öppna Verktyg</span><span>&rarr;</span></div></div></a>
+<a href="/sv/pdf-redactor" data-search="pdf redact verktyg pdf redact: snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar. pdf redact verktyg pdf redact online pdf redact pdf-redactor" class="tool-card rounded-3xl p-6 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-slate-200/80 dark:border-slate-800/80 hover:border-sky-500/50 hover:shadow-xl hover:scale-[1.01] transition-all duration-200 flex flex-col justify-between group"><div><div class="flex items-center justify-between mb-3"><span class="text-[10px] font-mono uppercase px-2.5 py-0.5 rounded-full bg-sky-100 dark:bg-sky-900 text-sky-700 dark:text-sky-300 font-bold">TOOL</span><span class="text-[10px] text-slate-400 font-mono">100% Client-Side</span></div><h3 class="text-base font-bold text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition mb-2">Pdf Redact Verktyg</h3><p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-2 mb-4 leading-relaxed">Pdf Redact: Snabbt och säkert onlineverktyg som körs 100% lokalt i webbläsaren utan serveruppladdningar.</p></div><div><div class="flex flex-wrap mb-3"><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf redact verktyg</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#pdf redact</span><span class='inline-block bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 text-[11px] px-2 py-0.5 rounded-full font-mono mr-1.5 mb-1.5 border border-sky-200/50 dark:border-sky-800/50'>#online pdf redact</span></div><div class="text-xs font-bold text-sky-600 dark:text-sky-400 flex items-center space-x-1 group-hover:translate-x-1 transition-transform"><span>Öppna Verktyg</span><span>&rarr;</span></div></div></a>
+      </div>
+    </div>
+
+    <script>
+    (function() {
+      const priceSlider = document.getElementById('bento-price-slider');
+      const cogsSlider = document.getElementById('bento-cogs-slider');
+      const priceVal = document.getElementById('bento-price-val');
+      const cogsVal = document.getElementById('bento-cogs-val');
+      const feesDisp = document.getElementById('bento-fees-disp');
+      const profitDisp = document.getElementById('bento-profit-disp');
+      const marginDisp = document.getElementById('bento-margin-disp');
+
+      function updateFbaSim() {
+        const price = parseFloat(priceSlider.value) || 40;
+        const cogs = parseFloat(cogsSlider.value) || 9.5;
+        priceVal.innerText = '$' + price.toFixed(2);
+        cogsVal.innerText = '$' + cogs.toFixed(2);
+
+        const referral = price * 0.15;
+        const pickPack = 4.75;
+        const totalFees = referral + pickPack;
+        const profit = price - cogs - totalFees;
+        const margin = ((profit / price) * 100).toFixed(1);
+
+        feesDisp.innerText = '$' + totalFees.toFixed(2);
+        profitDisp.innerText = '$' + profit.toFixed(2);
+        marginDisp.innerText = margin + '%';
+      }
+
+      if (priceSlider && cogsSlider) {
+        priceSlider.addEventListener('input', updateFbaSim);
+        cogsSlider.addEventListener('input', updateFbaSim);
+        updateFbaSim();
+      }
+
+      const searchInput = document.getElementById('tool-search');
+      const clearBtn = document.getElementById('btn-clear-search');
+      const resetBtn = document.getElementById('btn-reset-filter');
+      const emptyState = document.getElementById('no-tools-found');
+      const cards = Array.from(document.querySelectorAll('.tool-card'));
+      const statsEl = document.getElementById('search-stats');
+      const totalCards = cards.length;
+
+      function filterCards() {
+        const query = searchInput.value.trim().toLowerCase();
+        if (clearBtn) clearBtn.classList.toggle('hidden', !query);
+
+        let visibleCount = 0;
+        cards.forEach(card => {
+          const corpus = card.getAttribute('data-search') || '';
+          const matches = !query || corpus.includes(query);
+          card.style.display = matches ? '' : 'none';
+          if (matches) visibleCount++;
+        });
+
+        if (statsEl) {
+          statsEl.innerText = query ? ('Hittade __N__ av __TOTAL__ verktyg'.replace('__N__', visibleCount).replace('__TOTAL__', totalCards)) : ('Visar alla __N__ utvecklarverktyg'.replace('__N__', totalCards));
+        }
+
+        if (emptyState) {
+          emptyState.classList.toggle('hidden', visibleCount > 0);
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', filterCards);
+
+        document.addEventListener('keydown', e => {
+          const isSearchKey = (e.key === '/' && document.activeElement !== searchInput && document.activeElement.tagName !== 'TEXTAREA' && document.activeElement.tagName !== 'INPUT') ||
+                              (e.key.toLowerCase() === 'k' && (e.ctrlKey || e.metaKey));
+          if (isSearchKey) {
+            e.preventDefault();
+            if (typeof window.focusAndCenterSearch === 'function') {
+              window.focusAndCenterSearch();
+            } else {
+              searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              searchInput.focus();
+              searchInput.select();
+            }
+          }
+          if (e.key === 'Escape' && document.activeElement === searchInput) {
+            searchInput.value = '';
+            filterCards();
+            searchInput.blur();
+          }
+        });
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          filterCards();
+          searchInput.focus();
+        });
+      }
+
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          searchInput.value = '';
+          filterCards();
+          searchInput.focus();
+        });
+      }
+    })();
+    </script>
+    
+
+    
+    <!-- GlobalCoreHub Native Ad Banner (Apple Glass Style) -->
+    <aside class="my-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Sponsored Content">
+      <div class="rounded-3xl border border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl p-4 sm:p-6 text-center overflow-hidden shadow-sm">
+        <div class="text-[10px] uppercase font-mono tracking-widest text-slate-400 mb-3 flex items-center justify-center space-x-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+          <span>SPONSRAT INNEHÅLL</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+        </div>
+        <div id="container-411eda7150daa05047a0b4f542aa62eb" class="min-h-[100px] flex items-center justify-center"></div>
+        <script async="async" data-cfasync="false" src="https://dischargeconceiteffort.com/411eda7150daa05047a0b4f542aa62eb/invoke.js"></script>
+      </div>
+    </aside>
+    
+  </main>
+
+  <!-- Modern SaaS Frosted Footer -->
+  <footer class="mt-auto border-t border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl text-slate-600 dark:text-slate-400 py-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-sky-500 to-blue-600"></span>
+            <span class="font-black text-slate-900 dark:text-slate-100 text-sm">PdfPure Studio</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed max-w-md">
+            100% Lokal säkerhet: dokumenten laddas aldrig upp till molnet.
+          </p>
+          <div class="flex items-center space-x-3 text-[11px] font-mono text-slate-500">
+            <span>⚡ Cloudflare Edge · 0ms Kallstart</span>
+            <span>&bull;</span>
+            <span>100% Lokal Sandlåda: Noll serverlagring, noll datauppladdningar.</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider text-[11px] mb-3">Verktyg & Index</h4>
+          <ul class="space-y-2 font-mono text-[11px]">
+            
+            <li><a href="/sv/pdf-merger" class="hover:text-sky-600 transition">Pdf Merge Verktyg</a></li>
+            
+            <li><a href="/sv/pdf-splitter" class="hover:text-sky-600 transition">Pdf Split Verktyg</a></li>
+            
+            <li><a href="/sv/pdf-sign-stamp" class="hover:text-sky-600 transition">Pdf Sign Verktyg</a></li>
+            
+            <li><a href="/sv/image-to-pdf" class="hover:text-sky-600 transition">Img To Pdf Konvert</a></li>
+            
+            <li><a href="/sv/pdf-redactor" class="hover:text-sky-600 transition">Pdf Redact Verktyg</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider text-[11px] mb-3">Globalt Flerspråkigt Nätverk</h4>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
+            
+            <a href="/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">English</a>
+            
+            <a href="/zh/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Chinese</a>
+            
+            <a href="/es/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Spanish</a>
+            
+            <a href="/pt/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Portuguese</a>
+            
+            <a href="/de/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">German</a>
+            
+            <a href="/fr/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">French</a>
+            
+            <a href="/ja/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Japanese</a>
+            
+            <a href="/ko/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Korean</a>
+            
+            <a href="/it/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Italian</a>
+            
+            <a href="/ru/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Russian</a>
+            
+            <a href="/ar/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Arabic</a>
+            
+            <a href="/id/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Indonesian</a>
+            
+            <a href="/vi/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Vietnamese</a>
+            
+            <a href="/tr/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Turkish</a>
+            
+            <a href="/th/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Thai</a>
+            
+            <a href="/hi/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Hindi</a>
+            
+            <a href="/nl/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Dutch</a>
+            
+            <a href="/pl/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Polish</a>
+            
+            <a href="/sv/" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Swedish</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-slate-200/60 dark:border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 font-mono">
+        <div>
+          &copy; 2026 PdfPure Studio. 100% Client-Side Private AI. All rights reserved.
+          
+          <span class="mx-2 opacity-40">|</span>
+          <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline font-semibold">⚡ Partnerlösning ↗</a>
+          
+        </div>
+        <div class="mt-2 sm:mt-0">19 Globala Språk · 35 Lokaliserade Slutpunkter · 100% Klientsidan</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top-btn" class="fixed bottom-6 right-6 z-50 p-3.5 rounded-full bento-glass shadow-2xl hover:scale-110 transition opacity-0 pointer-events-none transform translate-y-4" title="Tillbaka till toppen">
+    <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- Interaction Runtime -->
+  <script>
+  (function() {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
+
+    // All Tools Dropdown Controller: Zero-Gap Hover + Click Toggle + Click Outside
+    (function initToolsDropdown() {
+      const container = document.getElementById('tools-dropdown-container');
+      const btn = document.getElementById('tools-dropdown-btn');
+      const panel = document.getElementById('tools-dropdown-panel');
+      const arrow = document.getElementById('tools-dropdown-arrow');
+      if (!container || !btn || !panel) return;
+
+      let hoverTimer = null;
+      let isOpen = false;
+
+      function openPanel() {
+        if (hoverTimer) clearTimeout(hoverTimer);
+        isOpen = true;
+        panel.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        if (arrow) arrow.classList.add('rotate-180');
+      }
+
+      function closePanel() {
+        if (hoverTimer) clearTimeout(hoverTimer);
+        hoverTimer = setTimeout(() => {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+        }, 220);
+      }
+
+      function togglePanel(e) {
+        e.stopPropagation();
+        if (isOpen) {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+        } else {
+          openPanel();
+        }
+      }
+
+      container.addEventListener('mouseenter', openPanel);
+      container.addEventListener('mouseleave', closePanel);
+      btn.addEventListener('click', togglePanel);
+
+      document.addEventListener('click', (e) => {
+        if (!container.contains(e.target)) {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+        }
+        // Auto close open details tag when clicking outside
+        document.querySelectorAll('details[open]').forEach(det => {
+          if (!det.contains(e.target)) det.removeAttribute('open');
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isOpen) {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+          btn.focus();
+        }
+      });
+    })();
+
+    const btt = document.getElementById('back-to-top-btn');
+    if (btt) {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY > 300;
+        btt.classList.toggle('opacity-0', !scrolled);
+        btt.classList.toggle('pointer-events-none', !scrolled);
+        btt.classList.toggle('translate-y-4', !scrolled);
+      });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    window.showToast = function(msg) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 z-50 bento-glass text-slate-900 dark:text-white text-xs font-semibold px-5 py-3 rounded-2xl shadow-2xl flex items-center space-x-2 transition-all duration-300';
+      toast.innerHTML = '<span class="text-sky-500 font-bold">✓</span><span>' + msg + '</span>';
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'scale-95');
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
+    };
+
+    // Smooth Centered Search Focus Runtime with Header Offset
+    window.focusAndCenterSearch = function() {
+      const searchInput = document.getElementById('tool-search');
+      if (searchInput) {
+        const header = document.querySelector('header') || document.querySelector('nav');
+        const headerOffset = (header ? header.offsetHeight : 70) + 24;
+        const elementPosition = searchInput.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: Math.max(0, offsetPosition),
+          behavior: 'smooth'
+        });
+
+        setTimeout(() => {
+          try {
+            searchInput.focus({ preventScroll: true });
+            searchInput.select();
+          } catch(e) {
+            searchInput.focus();
+          }
+          searchInput.classList.add('search-highlight-pulse');
+          setTimeout(() => searchInput.classList.remove('search-highlight-pulse'), 1200);
+        }, 300);
+        return true;
+      } else {
+        window.location.href = '/sv/?focus_search=1#tool-search';
+        return false;
+      }
+    };
+
+    // Intercept clicks on top nav search & mobile search
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('#nav-search-btn, .mobile-search-link, a[href*="#tool-search"]');
+      if (btn && document.getElementById('tool-search')) {
+        e.preventDefault();
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+        if (history.replaceState) history.replaceState(null, '', '#tool-search');
+        window.focusAndCenterSearch();
+      }
+    });
+
+    // Auto focus when loading with #tool-search or focus_search=1
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const shouldFocus = window.location.hash === '#tool-search' || params.get('focus_search') === '1' || params.has('q');
+      if (shouldFocus && document.getElementById('tool-search')) {
+        setTimeout(window.focusAndCenterSearch, 250);
+      }
+    });
+
+    // Global Keyboard Shortcuts (Ctrl+K or /)
+    document.addEventListener('keydown', (e) => {
+      const isSearchKey = (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) ||
+                          (e.key.toLowerCase() === 'k' && (e.ctrlKey || e.metaKey));
+      if (isSearchKey) {
+        e.preventDefault();
+        window.focusAndCenterSearch();
+      }
+    });
+  })();
+  </script>
+  <!-- Hardware Acceleration & Compatibility Detection -->
+  <script>
+  (function checkHardwareAcceleration() {
+    if ('gpu' in navigator) {
+      navigator.gpu.requestAdapter().then(adapter => {
+        const el = document.getElementById('accel-status-text');
+        if (el) el.textContent = adapter ? 'WebGPU Accelerated ⚡' : 'WebAssembly Mode (CPU Fallback)';
+      }).catch(() => {
+        const el = document.getElementById('accel-status-text');
+        if (el) el.textContent = 'WebAssembly Mode (CPU Fallback)';
+      });
+    }
+  })();
+  </script>
+  <!-- Offline Service Worker Registration -->
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
+    });
+  }
+  </script>
+</body>
+</html>

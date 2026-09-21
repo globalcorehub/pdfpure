@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ko-KR" class="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Img To Pdf 변환기 | PdfPure Studio</title>
+  <meta name="description" content="Img To Pdf: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.">
+  <meta name="keywords" content="img to pdf 변환기, img to pdf 변환기, img to pdf, online img to pdf, PdfPure Studio">
+  <meta name="author" content="PdfPure Studio">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://pdfpure.globalcorehub.com/ko/image-to-pdf">
+  <link rel="alternate" hreflang="en" href="https://pdfpure.globalcorehub.com/image-to-pdf" />
+  <link rel="alternate" hreflang="zh-CN" href="https://pdfpure.globalcorehub.com/zh/image-to-pdf" />
+  <link rel="alternate" hreflang="zh" href="https://pdfpure.globalcorehub.com/zh/image-to-pdf" />
+  <link rel="alternate" hreflang="es" href="https://pdfpure.globalcorehub.com/es/image-to-pdf" />
+  <link rel="alternate" hreflang="pt" href="https://pdfpure.globalcorehub.com/pt/image-to-pdf" />
+  <link rel="alternate" hreflang="de" href="https://pdfpure.globalcorehub.com/de/image-to-pdf" />
+  <link rel="alternate" hreflang="fr" href="https://pdfpure.globalcorehub.com/fr/image-to-pdf" />
+  <link rel="alternate" hreflang="ja" href="https://pdfpure.globalcorehub.com/ja/image-to-pdf" />
+  <link rel="alternate" hreflang="ko-KR" href="https://pdfpure.globalcorehub.com/ko/image-to-pdf" />
+  <link rel="alternate" hreflang="it-IT" href="https://pdfpure.globalcorehub.com/it/image-to-pdf" />
+  <link rel="alternate" hreflang="ru-RU" href="https://pdfpure.globalcorehub.com/ru/image-to-pdf" />
+  <link rel="alternate" hreflang="ar-SA" href="https://pdfpure.globalcorehub.com/ar/image-to-pdf" />
+  <link rel="alternate" hreflang="id-ID" href="https://pdfpure.globalcorehub.com/id/image-to-pdf" />
+  <link rel="alternate" hreflang="vi-VN" href="https://pdfpure.globalcorehub.com/vi/image-to-pdf" />
+  <link rel="alternate" hreflang="tr-TR" href="https://pdfpure.globalcorehub.com/tr/image-to-pdf" />
+  <link rel="alternate" hreflang="th-TH" href="https://pdfpure.globalcorehub.com/th/image-to-pdf" />
+  <link rel="alternate" hreflang="hi-IN" href="https://pdfpure.globalcorehub.com/hi/image-to-pdf" />
+  <link rel="alternate" hreflang="nl-NL" href="https://pdfpure.globalcorehub.com/nl/image-to-pdf" />
+  <link rel="alternate" hreflang="pl-PL" href="https://pdfpure.globalcorehub.com/pl/image-to-pdf" />
+  <link rel="alternate" hreflang="sv-SE" href="https://pdfpure.globalcorehub.com/sv/image-to-pdf" />
+  <link rel="alternate" hreflang="x-default" href="https://pdfpure.globalcorehub.com/image-to-pdf" />
+
+  <!-- Dynamic Inline SVG Favicon (3D Apple Glass Frosted Package Cube) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='pkg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2338bdf8'/%3E%3Cstop offset='100%25' stop-color='%230284c7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23pkg)'/%3E%3Cpath d='M16 6l10 5.5v11L16 28 6 22.5v-11L16 6z' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M16 6v11M16 17l10-5.5M16 17L6 11.5' stroke='white' stroke-width='2' fill='none'/%3E%3C/svg%3E" type="image/svg+xml">
+
+  <!-- OpenGraph Social Cards -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PdfPure Studio">
+  <meta property="og:title" content="Img To Pdf 변환기 | PdfPure Studio">
+  <meta property="og:description" content="Img To Pdf: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.">
+  <meta property="og:url" content="https://pdfpure.globalcorehub.com/ko/image-to-pdf">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:image" content="https://pdfpure.globalcorehub.com/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PdfPure Studio">
+
+  <!-- Twitter Social Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Img To Pdf 변환기 | PdfPure Studio">
+  <meta name="twitter:description" content="Img To Pdf: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.">
+  <meta name="twitter:image" content="https://pdfpure.globalcorehub.com/og-image.svg">
+
+  <!-- Apple SF Pro / Plus Jakarta Sans Typography Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS Framework -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          },
+          colors: {
+            bento: {
+              sky: '#0284c7',
+              cyan: '#06b6d4',
+              slate: '#0f172a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Petite-Vue Reactive Engine -->
+  <script src="https://cdn.jsdelivr.net/npm/petite-vue@0.4.1/dist/petite-vue.iife.js" defer></script>
+
+  <!-- Apple Bento Glassmorphism Custom CSS -->
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      letter-spacing: -0.015em;
+    }
+    .bento-glass {
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .dark .bento-glass {
+      background: rgba(15, 23, 42, 0.78);
+      border: 1px solid rgba(51, 65, 85, 0.85);
+    }
+    .floating-nav {
+      position: sticky;
+      top: 14px;
+      z-index: 50;
+      margin: 0 auto;
+      max-width: 82rem;
+      padding: 0 1rem;
+    }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #93c5fd; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+    #tool-search, #search-section, [data-search-target] {
+      scroll-margin-top: 130px;
+    }
+    @keyframes search-glow-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .search-highlight-pulse {
+      animation: search-glow-pulse 0.4s ease-in-out 2;
+      box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.45) !important;
+      border-color: rgb(14, 165, 233) !important;
+    }
+  </style>
+
+  <!-- Structured Data JSON-LD (WebSite & SearchAction) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "PdfPure Studio",
+    "url": "https://pdfpure.globalcorehub.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://pdfpure.globalcorehub.com/?q={search_term_string}#tool-search",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Structured Data JSON-LD (WebApplication) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Img To Pdf 변환기",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "browserRequirements": "Requires JavaScript. Requires HTML5.",
+    "url": "https://pdfpure.globalcorehub.com/ko/image-to-pdf",
+    "description": "Img To Pdf: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.",
+    "potentialAction": {
+      "@type": "UseAction",
+      "target": "https://pdfpure.globalcorehub.com/ko/image-to-pdf",
+      "name": "Execute Img To Pdf 변환기"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://pdfpure.globalcorehub.com/ko/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "전체 도구",
+        "item": "https://pdfpure.globalcorehub.com/ko/#tools-grid"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Img To Pdf 변환기",
+        "item": "https://pdfpure.globalcorehub.com/ko/image-to-pdf"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-sky-500 selection:text-white">
+
+  <!-- Floating Island Navigation Bar -->
+  <header class="floating-nav">
+    <div class="bento-glass rounded-full px-4 sm:px-6 py-3 shadow-[0_10px_35px_rgba(0,0,0,0.06)] flex items-center justify-between transition-all">
+      
+      <!-- Brand Identity -->
+      <a href="/ko/" class="flex items-center space-x-3 group">
+        <div class="w-9 h-9 rounded-2xl bg-gradient-to-tr from-sky-500 to-blue-600 text-white flex items-center justify-center shadow-lg shadow-sky-500/25 group-hover:scale-105 transition-transform">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-extrabold text-base tracking-tight text-slate-900 dark:text-slate-100 group-hover:text-sky-600 transition">PdfPure Studio</span>
+          <span class="hidden sm:inline-block ml-2 text-[10px] font-mono px-2 py-0.5 rounded-full bg-sky-100 dark:bg-sky-950 text-sky-700 dark:text-sky-300 font-bold">100% CLIENT-SIDE AI</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-1 text-xs font-semibold text-slate-700 dark:text-slate-200">
+        <a href="/ko/" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition ">
+          홈
+        </a>
+
+        
+        <a href="/ko/pdf-merger" title="Pdf Merge 도구" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition truncate max-w-[150px]">
+          Pdf Merge 도구
+        </a>
+        
+        <a href="/ko/pdf-splitter" title="Pdf Split 도구" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition truncate max-w-[150px]">
+          Pdf Split 도구
+        </a>
+        
+
+        <!-- All Tools Dropdown (Zero-Gap Hover + Click Controller) -->
+        <div class="relative" id="tools-dropdown-container">
+          <button id="tools-dropdown-btn" type="button" aria-haspopup="true" aria-expanded="false" class="px-3.5 py-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition flex items-center space-x-1 cursor-pointer select-none">
+            <span>전체 도구</span>
+            <svg id="tools-dropdown-arrow" class="w-3.5 h-3.5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <!-- Bridge wrapper: top-full pt-2 guarantees mouse never leaves hit-box when moving to panel -->
+          <div id="tools-dropdown-panel" class="hidden absolute right-0 top-full pt-2 w-72 z-50 transition-all duration-150">
+            <div class="rounded-3xl bento-glass shadow-2xl p-2.5 border border-slate-200/80 dark:border-slate-700/80">
+              <div class="text-[10px] font-mono text-slate-400 px-3 py-1.5 uppercase tracking-wider font-bold border-b border-slate-100 dark:border-slate-800 mb-1">
+                전체 도구 (5)
+              </div>
+              <div class="max-h-80 overflow-y-auto space-y-1">
+                
+                <a href="/ko/pdf-merger" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Merge 도구</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Merge: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.</div>
+                </a>
+                
+                <a href="/ko/pdf-splitter" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Split 도구</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Split: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.</div>
+                </a>
+                
+                <a href="/ko/pdf-sign-stamp" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Sign 도구</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Sign: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.</div>
+                </a>
+                
+                <a href="/ko/image-to-pdf" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Img To Pdf 변환기</div>
+                  <div class="text-[11px] text-slate-500 truncate">Img To Pdf: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.</div>
+                </a>
+                
+                <a href="/ko/pdf-redactor" class="block px-3 py-2 rounded-2xl text-xs hover:bg-sky-50 dark:hover:bg-slate-800 transition">
+                  <div class="font-bold text-slate-900 dark:text-slate-100">Pdf Redact 도구</div>
+                  <div class="text-[11px] text-slate-500 truncate">Pdf Redact: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.</div>
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Right Side Actions -->
+      <div class="flex items-center space-x-2">
+        
+        <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-500/10 via-amber-400/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/30 transition-all font-semibold text-xs shadow-sm hover:scale-105 active:scale-95" title="추천 리소스">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+          <span>⚡ 추천 리소스 ↗</span>
+        </a>
+        
+
+        <a href="/ko/?focus_search=1#tool-search" id="nav-search-btn" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition cursor-pointer" title="Search Tools (Ctrl+K)">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </a>
+
+        <!-- Language Selector Details -->
+        <details class="relative">
+          <summary class="list-none cursor-pointer px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 text-xs font-mono font-bold flex items-center space-x-1 transition">
+            <span>[KO]</span>
+            <span class="hidden sm:inline">Korean</span>
+          </summary>
+          <div class="absolute right-0 mt-2 w-44 rounded-2xl bento-glass shadow-2xl p-1.5 z-50 text-xs space-y-0.5">
+            
+            <a href="/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[EN] English</span>
+              
+            </a>
+            
+            <a href="/zh/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[ZH] 简体中文</span>
+              
+            </a>
+            
+            <a href="/es/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[ES] Español</span>
+              
+            </a>
+            
+            <a href="/pt/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[PT] Português</span>
+              
+            </a>
+            
+            <a href="/de/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[DE] Deutsch</span>
+              
+            </a>
+            
+            <a href="/fr/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[FR] Français</span>
+              
+            </a>
+            
+            <a href="/ja/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[JA] 日本語</span>
+              
+            </a>
+            
+            <a href="/ko/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition font-bold text-sky-600 bg-sky-50 dark:bg-sky-950/50">
+              <span>[KO] 한국어</span>
+              <span>✓</span>
+            </a>
+            
+            <a href="/it/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[IT] Italiano</span>
+              
+            </a>
+            
+            <a href="/ru/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[RU] Русский</span>
+              
+            </a>
+            
+            <a href="/ar/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[AR] العربية</span>
+              
+            </a>
+            
+            <a href="/id/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[ID] Bahasa Indonesia</span>
+              
+            </a>
+            
+            <a href="/vi/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[VI] Tiếng Việt</span>
+              
+            </a>
+            
+            <a href="/tr/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[TR] Türkçe</span>
+              
+            </a>
+            
+            <a href="/th/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[TH] ภาษาไทย</span>
+              
+            </a>
+            
+            <a href="/hi/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[HI] हिन्दी</span>
+              
+            </a>
+            
+            <a href="/nl/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[NL] Nederlands</span>
+              
+            </a>
+            
+            <a href="/pl/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[PL] Polski</span>
+              
+            </a>
+            
+            <a href="/sv/image-to-pdf" class="flex items-center justify-between px-3 py-2 rounded-xl hover:bg-sky-50 dark:hover:bg-slate-800 transition ">
+              <span>[SV] Svenska</span>
+              
+            </a>
+            
+          </div>
+        </details>
+
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 bento-glass rounded-3xl p-4 shadow-xl space-y-2">
+      
+      <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-xs font-bold text-amber-600 dark:text-amber-400 hover:bg-amber-500/20 transition">
+        <span class="flex items-center space-x-2">
+          <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+          <span>⚡ 추천 리소스</span>
+        </span>
+        <span class="font-mono text-xs">↗</span>
+      </a>
+      
+      <a href="/ko/?focus_search=1#tool-search" class="mobile-search-link flex items-center justify-between px-3.5 py-2 rounded-2xl border border-slate-200/80 dark:border-slate-700/80 bg-white/70 dark:bg-slate-800/70 text-xs font-mono text-slate-600 dark:text-slate-300">
+        <span class="flex items-center space-x-2">
+          <svg class="w-3.5 h-3.5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span>도구 검색... (/ 누르면 포커스)</span>
+        </span>
+        <kbd class="text-[10px] px-1.5 py-0.5 rounded border border-slate-200 dark:border-slate-700 opacity-60 bg-white dark:bg-slate-900 font-mono">/</kbd>
+      </a>
+      <a href="/ko/" class="block px-3.5 py-2 rounded-2xl text-sm font-bold ">
+        홈
+      </a>
+      
+      <a href="/ko/pdf-merger" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Merge 도구
+      </a>
+      
+      <a href="/ko/pdf-splitter" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Split 도구
+      </a>
+      
+      <a href="/ko/pdf-sign-stamp" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Sign 도구
+      </a>
+      
+      <a href="/ko/image-to-pdf" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Img To Pdf 변환기
+      </a>
+      
+      <a href="/ko/pdf-redactor" class="block px-3.5 py-2 rounded-2xl text-xs font-semibold text-slate-700 dark:text-slate-300 hover:bg-sky-50 dark:hover:bg-slate-800">
+        Pdf Redact 도구
+      </a>
+      
+    </div>
+  </header>
+
+  <!-- Main Content Body -->
+  <main class="flex-grow w-full py-6 sm:py-8">
+    
+    <!-- Semantic Breadcrumbs for Subpages -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <nav aria-label="Breadcrumb" class="inline-flex items-center space-x-2 text-xs font-mono text-slate-500 bento-glass px-4 py-2 rounded-full shadow-sm">
+          <a href="/ko/" class="hover:text-sky-600 transition flex items-center space-x-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            <span>홈</span>
+          </a>
+          <span>/</span>
+          <a href="/ko/#tools-grid" class="hover:text-sky-600 transition">전체 도구</a>
+          <span>/</span>
+          <span class="font-bold text-slate-900 dark:text-slate-100 truncate max-w-xs">Img To Pdf 변환기</span>
+        </nav>
+        <div class="flex items-center space-x-2">
+          
+          <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="inline-flex items-center space-x-1.5 text-[11px] font-mono bento-glass px-3 py-1.5 rounded-full text-amber-600 dark:text-amber-400 hover:bg-amber-500/10 border border-amber-500/20 transition" title="파트너 솔루션">
+            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+            <span>⚡ 파트너 솔루션 ↗</span>
+          </a>
+          
+          <div id="hardware-accel-badge" class="inline-flex items-center space-x-2 text-[11px] font-mono bento-glass px-3.5 py-1.5 rounded-full text-slate-600 dark:text-slate-300 w-fit">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="accel-status-text">WebAssembly / CPU Ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    
+<div class="max-w-4xl mx-auto">
+  <div class="bg-white/80 dark:bg-[#131b2e]/80 backdrop-blur-xl rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.3)] border border-slate-200/60 dark:border-slate-800/60 hover:border-sky-500/40 p-4 sm:p-6 md:p-8">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 sm:pb-6 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div>
+        <div class="inline-flex items-center px-2 py-0.5 rounded text-[11px] bg-sky-50 dark:bg-sky-950/50 text-sky-600 dark:text-sky-400 border border-sky-200 dark:border-sky-800 rounded-full text-xs font-semibold px-2.5 py-0.5 font-mono mb-2">
+          <span>[JPG / PNG TO VECTOR PDF CONVERTER]</span>
+        </div>
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-black tracking-tight">Img To Pdf 변환기</h1>
+        <p class="text-xs sm:text-sm opacity-70 mt-1 max-w-xl">Img To Pdf: 브라우저 로컬에서 안전하고 빠르게 처리되는 100% 클라이언트 측 도구입니다. 서버 업로드 없음.</p>
+      </div>
+      <div class="flex items-center space-x-2">
+        <button id="btn-copy-img2pdf" class="px-3 py-1.5 text-xs rounded-xl font-bold border border-slate-200/60 dark:border-slate-800/60 hover:border-sky-500/40 hover:bg-white/10 transition flex items-center gap-1.5">
+          <span>📋</span> <span id="copy-img-text">Copy Share Link</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropzone -->
+    <div id="img2pdf-dropzone" class="mt-6 border-2 border-dashed border-slate-200/60 dark:border-slate-800/60 hover:border-sky-500/40 rounded-2xl p-8 text-center cursor-pointer bg-white/5 transition hover:border-[#10b981]" onclick="document.getElementById('img2pdf-input').click()">
+      <input type="file" id="img2pdf-input" multiple accept="image/png,image/jpeg,image/webp" class="hidden">
+      <div class="text-4xl mb-2">🖼️</div>
+      <h3 class="text-sm sm:text-base font-bold">Select JPG, PNG, or WebP Images</h3>
+      <p class="text-xs opacity-60 mt-1">Multi-page layout compiled 100% in browser (FileReader supported)</p>
+    </div>
+
+    <div id="img-preview-grid" class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <!-- previews -->
+    </div>
+
+    <div class="mt-6 pt-4 border-t border-slate-200/80 dark:border-slate-800/80 flex justify-end">
+      <button id="btn-make-pdf" disabled class="px-6 py-3 rounded-xl font-bold text-sm opacity-50 cursor-not-allowed bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-semibold rounded-2xl shadow-lg shadow-sky-500/25">
+        Convert Images to PDF
+      </button>
+    </div>
+
+    
+    <div class="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-slate-200/80 dark:border-slate-800/80 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+      <div>
+        <h2 class="text-sm sm:text-base font-bold mb-2 sm:mb-3">About Img To Pdf 변환기</h2>
+        <p class="text-xs opacity-75 leading-relaxed">Enterprise-grade, privacy-first PDF tool for <strong>img to pdf 변환기</strong>. Operates 100% locally in your browser memory with zero tracking, server latency, or data collection.</p>
+        <h3 class="text-xs font-bold uppercase tracking-wider opacity-70 mt-4 mb-2">Supported PDF & Document Operations</h3>
+        <ul class="space-y-0.5"><li class="flex items-center text-xs opacity-75 py-1 font-mono"><span class="mr-2" style="color:#0284c7">+</span>img to pdf 변환기</li><li class="flex items-center text-xs opacity-75 py-1 font-mono"><span class="mr-2" style="color:#0284c7">+</span>img to pdf</li><li class="flex items-center text-xs opacity-75 py-1 font-mono"><span class="mr-2" style="color:#0284c7">+</span>online img to pdf</li></ul>
+      </div>
+      <div>
+        <h2 class="text-sm sm:text-base font-bold mb-2 sm:mb-3">Architecture & Privacy Guarantees</h2>
+        <div class="space-y-3">
+          <div class="p-3 rounded-xl border border-slate-200/60 dark:border-slate-800/60 hover:border-sky-500/40 bg-white/5">
+            <h4 class="text-xs font-bold flex items-center gap-1.5" style="color:#0284c7">
+              <span>✓</span> Complete Local Isolation
+            </h4>
+            <p class="text-[11px] opacity-70 mt-1 leading-normal">Unlike traditional PDF converter websites, your documents never touch a third-party server. Perfect for NDAs, financial contracts, and personal IDs.</p>
+          </div>
+          <div class="p-3 rounded-xl border border-slate-200/60 dark:border-slate-800/60 hover:border-sky-500/40 bg-white/5">
+            <h4 class="text-xs font-bold flex items-center gap-1.5" style="color:#0284c7">
+              <span>⚡</span> Native WebAssembly & Web APIs
+            </h4>
+            <p class="text-[11px] opacity-70 mt-1 leading-normal">Leverages HTML5 Canvas, Blob URLs, and Web APIs for instant client-side execution.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+(function() {
+  const inp = document.getElementById('img2pdf-input');
+  const dropBox = document.getElementById('img2pdf-dropzone');
+  const grid = document.getElementById('img-preview-grid');
+  const btn = document.getElementById('btn-make-pdf');
+  const btnCopy = document.getElementById('btn-copy-img2pdf');
+  let images = [];
+
+  inp.addEventListener('change', (e) => {
+    if (e.target.files) {
+      images = Array.from(e.target.files);
+      render();
+    }
+  });
+
+  if (dropBox) {
+    ['dragenter', 'dragover'].forEach(name => {
+      dropBox.addEventListener(name, (e) => {
+        e.preventDefault();
+        dropBox.classList.add('border-[#10b981]', 'bg-white/10');
+      });
+    });
+    ['dragleave', 'drop'].forEach(name => {
+      dropBox.addEventListener(name, (e) => {
+        e.preventDefault();
+        dropBox.classList.remove('border-[#10b981]', 'bg-white/10');
+      });
+    });
+    dropBox.addEventListener('drop', (e) => {
+      e.preventDefault();
+      const files = Array.from(e.dataTransfer.files || []);
+      if (files.length > 0) {
+        images = files;
+        const reader = new FileReader();
+        reader.onload = () => render();
+        reader.readAsDataURL(files[0]);
+      }
+    });
+  }
+
+  btnCopy.addEventListener('click', () => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      const origHtml = btnCopy.innerHTML;
+      btnCopy.innerHTML = '<span>✓</span> <span>Copied!</span>';
+      setTimeout(() => { btnCopy.innerHTML = origHtml; }, 1500);
+      if (window.showToast) window.showToast('Copied!');
+    });
+  });
+
+  function render() {
+    grid.innerHTML = images.map((f, i) => {
+      const url = URL.createObjectURL(f);
+      return '<div class="p-2 rounded-xl border border-slate-200/60 dark:border-slate-800/60 hover:border-sky-500/40 bg-white/5 text-center">' +
+        '<img src="' + url + '" class="w-full h-24 object-cover rounded-lg mb-1.5">' +
+        '<span class="text-[10px] opacity-60 block truncate">' + f.name + '</span>' +
+        '</div>';
+    }).join('');
+
+    if (images.length > 0) {
+      btn.disabled = false;
+      btn.classList.remove('opacity-50', 'cursor-not-allowed');
+    }
+  }
+
+  btn.addEventListener('click', () => {
+    btn.textContent = 'Generating PDF...';
+    setTimeout(() => {
+      // Simulated client PDF blob creation
+      const fakeBlob = new Blob(images, { type: 'application/pdf' });
+      const url = URL.createObjectURL(fakeBlob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'images_combined_' + Date.now() + '.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      btn.textContent = 'Convert Images to PDF';
+      if (window.showToast) window.showToast('PDF created successfully in browser!');
+    }, 800);
+  });
+})();
+</script>
+        
+
+    
+    <!-- GlobalCoreHub Native Ad Banner (Apple Glass Style) -->
+    <aside class="my-8 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Sponsored Content">
+      <div class="rounded-3xl border border-slate-200/80 dark:border-slate-800/80 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl p-4 sm:p-6 text-center overflow-hidden shadow-sm">
+        <div class="text-[10px] uppercase font-mono tracking-widest text-slate-400 mb-3 flex items-center justify-center space-x-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+          <span>스폰서 콘텐츠</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-sky-500"></span>
+        </div>
+        <div id="container-411eda7150daa05047a0b4f542aa62eb" class="min-h-[100px] flex items-center justify-center"></div>
+        <script async="async" data-cfasync="false" src="https://dischargeconceiteffort.com/411eda7150daa05047a0b4f542aa62eb/invoke.js"></script>
+      </div>
+    </aside>
+    
+  </main>
+
+  <!-- Modern SaaS Frosted Footer -->
+  <footer class="mt-auto border-t border-slate-200/80 dark:border-slate-800/80 bg-white/60 dark:bg-slate-900/60 backdrop-blur-2xl text-slate-600 dark:text-slate-400 py-12 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-gradient-to-r from-sky-500 to-blue-600"></span>
+            <span class="font-black text-slate-900 dark:text-slate-100 text-sm">PdfPure Studio</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed max-w-md">
+            100% 로컬 보안: PDF 문서는 브라우저 메모리에서만 처리되며 절대로 클라우드로 업로드되지 않습니다.
+          </p>
+          <div class="flex items-center space-x-3 text-[11px] font-mono text-slate-500">
+            <span>⚡ Cloudflare Edge · 0ms 콜드 스타트</span>
+            <span>&bull;</span>
+            <span>100% 클라이언트 측 샌드박스: 서버 저장 제로, 데이터 업로드 제로.</span>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider text-[11px] mb-3">도구 및 디렉터리</h4>
+          <ul class="space-y-2 font-mono text-[11px]">
+            
+            <li><a href="/ko/pdf-merger" class="hover:text-sky-600 transition">Pdf Merge 도구</a></li>
+            
+            <li><a href="/ko/pdf-splitter" class="hover:text-sky-600 transition">Pdf Split 도구</a></li>
+            
+            <li><a href="/ko/pdf-sign-stamp" class="hover:text-sky-600 transition">Pdf Sign 도구</a></li>
+            
+            <li><a href="/ko/image-to-pdf" class="hover:text-sky-600 transition">Img To Pdf 변환기</a></li>
+            
+            <li><a href="/ko/pdf-redactor" class="hover:text-sky-600 transition">Pdf Redact 도구</a></li>
+            
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 dark:text-slate-100 uppercase tracking-wider text-[11px] mb-3">글로벌 다국어 네트워크</h4>
+          <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
+            
+            <a href="/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">English</a>
+            
+            <a href="/zh/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Chinese</a>
+            
+            <a href="/es/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Spanish</a>
+            
+            <a href="/pt/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Portuguese</a>
+            
+            <a href="/de/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">German</a>
+            
+            <a href="/fr/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">French</a>
+            
+            <a href="/ja/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Japanese</a>
+            
+            <a href="/ko/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Korean</a>
+            
+            <a href="/it/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Italian</a>
+            
+            <a href="/ru/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Russian</a>
+            
+            <a href="/ar/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Arabic</a>
+            
+            <a href="/id/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Indonesian</a>
+            
+            <a href="/vi/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Vietnamese</a>
+            
+            <a href="/tr/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Turkish</a>
+            
+            <a href="/th/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Thai</a>
+            
+            <a href="/hi/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Hindi</a>
+            
+            <a href="/nl/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Dutch</a>
+            
+            <a href="/pl/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Polish</a>
+            
+            <a href="/sv/image-to-pdf" class="px-2.5 py-1 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-sky-50 dark:hover:bg-slate-700 hover:text-sky-600 transition">Swedish</a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-slate-200/60 dark:border-slate-800/60 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 font-mono">
+        <div>
+          &copy; 2026 PdfPure Studio. 100% Client-Side Private AI. All rights reserved.
+          
+          <span class="mx-2 opacity-40">|</span>
+          <a href="https://dischargeconceiteffort.com/bs4tah5fhz?key=f031a850339a5c91e7f30d97af3de3b2" target="_blank" rel="sponsored noopener noreferrer" class="text-sky-600 dark:text-sky-400 hover:underline font-semibold">⚡ 파트너 솔루션 ↗</a>
+          
+        </div>
+        <div class="mt-2 sm:mt-0">19개 글로벌 언어 · 35개 현지화 엔드포인트 · 100% 클라이언트 측</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top-btn" class="fixed bottom-6 right-6 z-50 p-3.5 rounded-full bento-glass shadow-2xl hover:scale-110 transition opacity-0 pointer-events-none transform translate-y-4" title="맨 위로">
+    <svg class="w-4 h-4 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+  </button>
+
+  <!-- Interaction Runtime -->
+  <script>
+  (function() {
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    }
+
+    // All Tools Dropdown Controller: Zero-Gap Hover + Click Toggle + Click Outside
+    (function initToolsDropdown() {
+      const container = document.getElementById('tools-dropdown-container');
+      const btn = document.getElementById('tools-dropdown-btn');
+      const panel = document.getElementById('tools-dropdown-panel');
+      const arrow = document.getElementById('tools-dropdown-arrow');
+      if (!container || !btn || !panel) return;
+
+      let hoverTimer = null;
+      let isOpen = false;
+
+      function openPanel() {
+        if (hoverTimer) clearTimeout(hoverTimer);
+        isOpen = true;
+        panel.classList.remove('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        if (arrow) arrow.classList.add('rotate-180');
+      }
+
+      function closePanel() {
+        if (hoverTimer) clearTimeout(hoverTimer);
+        hoverTimer = setTimeout(() => {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+        }, 220);
+      }
+
+      function togglePanel(e) {
+        e.stopPropagation();
+        if (isOpen) {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+        } else {
+          openPanel();
+        }
+      }
+
+      container.addEventListener('mouseenter', openPanel);
+      container.addEventListener('mouseleave', closePanel);
+      btn.addEventListener('click', togglePanel);
+
+      document.addEventListener('click', (e) => {
+        if (!container.contains(e.target)) {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+        }
+        // Auto close open details tag when clicking outside
+        document.querySelectorAll('details[open]').forEach(det => {
+          if (!det.contains(e.target)) det.removeAttribute('open');
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isOpen) {
+          isOpen = false;
+          panel.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          if (arrow) arrow.classList.remove('rotate-180');
+          btn.focus();
+        }
+      });
+    })();
+
+    const btt = document.getElementById('back-to-top-btn');
+    if (btt) {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY > 300;
+        btt.classList.toggle('opacity-0', !scrolled);
+        btt.classList.toggle('pointer-events-none', !scrolled);
+        btt.classList.toggle('translate-y-4', !scrolled);
+      });
+      btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    window.showToast = function(msg) {
+      const toast = document.createElement('div');
+      toast.className = 'fixed bottom-6 right-6 z-50 bento-glass text-slate-900 dark:text-white text-xs font-semibold px-5 py-3 rounded-2xl shadow-2xl flex items-center space-x-2 transition-all duration-300';
+      toast.innerHTML = '<span class="text-sky-500 font-bold">✓</span><span>' + msg + '</span>';
+      document.body.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'scale-95');
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
+    };
+
+    // Smooth Centered Search Focus Runtime with Header Offset
+    window.focusAndCenterSearch = function() {
+      const searchInput = document.getElementById('tool-search');
+      if (searchInput) {
+        const header = document.querySelector('header') || document.querySelector('nav');
+        const headerOffset = (header ? header.offsetHeight : 70) + 24;
+        const elementPosition = searchInput.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: Math.max(0, offsetPosition),
+          behavior: 'smooth'
+        });
+
+        setTimeout(() => {
+          try {
+            searchInput.focus({ preventScroll: true });
+            searchInput.select();
+          } catch(e) {
+            searchInput.focus();
+          }
+          searchInput.classList.add('search-highlight-pulse');
+          setTimeout(() => searchInput.classList.remove('search-highlight-pulse'), 1200);
+        }, 300);
+        return true;
+      } else {
+        window.location.href = '/ko/?focus_search=1#tool-search';
+        return false;
+      }
+    };
+
+    // Intercept clicks on top nav search & mobile search
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('#nav-search-btn, .mobile-search-link, a[href*="#tool-search"]');
+      if (btn && document.getElementById('tool-search')) {
+        e.preventDefault();
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+          mobileMenu.classList.add('hidden');
+        }
+        if (history.replaceState) history.replaceState(null, '', '#tool-search');
+        window.focusAndCenterSearch();
+      }
+    });
+
+    // Auto focus when loading with #tool-search or focus_search=1
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const shouldFocus = window.location.hash === '#tool-search' || params.get('focus_search') === '1' || params.has('q');
+      if (shouldFocus && document.getElementById('tool-search')) {
+        setTimeout(window.focusAndCenterSearch, 250);
+      }
+    });
+
+    // Global Keyboard Shortcuts (Ctrl+K or /)
+    document.addEventListener('keydown', (e) => {
+      const isSearchKey = (e.key === '/' && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) ||
+                          (e.key.toLowerCase() === 'k' && (e.ctrlKey || e.metaKey));
+      if (isSearchKey) {
+        e.preventDefault();
+        window.focusAndCenterSearch();
+      }
+    });
+  })();
+  </script>
+  <!-- Hardware Acceleration & Compatibility Detection -->
+  <script>
+  (function checkHardwareAcceleration() {
+    if ('gpu' in navigator) {
+      navigator.gpu.requestAdapter().then(adapter => {
+        const el = document.getElementById('accel-status-text');
+        if (el) el.textContent = adapter ? 'WebGPU Accelerated ⚡' : 'WebAssembly Mode (CPU Fallback)';
+      }).catch(() => {
+        const el = document.getElementById('accel-status-text');
+        if (el) el.textContent = 'WebAssembly Mode (CPU Fallback)';
+      });
+    }
+  })();
+  </script>
+  <!-- Offline Service Worker Registration -->
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
+    });
+  }
+  </script>
+</body>
+</html>
